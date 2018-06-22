@@ -1,0 +1,19 @@
+ <%= form_for(resource, as: resource_name,url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= devise_error_messages! %>
+  <div class="row justify-content-md-center p-5">
+  	<div class="col-sm-6">
+  		<div class="card bg-light mb-3" style="max-width: 25rem;">
+  <div class="card-header"><h3>Forgot Your Password?</h3></div>
+  <div class="card-body">
+    <h5 class="card-title">Email</h5>
+    <p class="card-text"><%= f.email_field :email, autofocus: true, autocomplete: "email",class:'radiusfull',placeholder:'Enter Your Email' %></p>
+    <%= f.submit "Send me reset password instructions",class:'btn btn-outline-warning btn-lg btn-block'%>
+  </div>
+</div>
+  		
+  	</div>
+  </div>
+ 
+<% end %>
+
+

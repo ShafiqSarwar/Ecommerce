@@ -1,0 +1,24 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.card-body p{
+    color: gray;
+}
+.details {
+    background-color: #dde27b;
+    color:black;
+    padding: 10px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    
+    }
+.details:hover {
+    background-color: black;
+    color:#fff;
+    text-decoration: none;
+    }
+    .details :active{
+    text-decoration: none;
+    }
+    

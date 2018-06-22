@@ -1,0 +1,72 @@
+<%= form_for(resource, as: resource_name,validate:true,url: registration_path(resource_name))do |f| %>
+<%= devise_error_messages! %>
+<div class="form-row justify-content-md-center">
+    <div class="form-group col-md-12 center ">
+       <h1>REGISTER FOR ACCOUNT</h1>
+    </div>
+  </div>
+
+<div class="form-row justify-content-md-center">
+<div class="form-group col-md-3">
+  <%= f.text_field :username, autofocus: true, autocomplete: "email",class:'radius2',placeholder: 'Name'%>
+</div>
+<div class="form-group col-md-3">
+<%= f.email_field :email, autofocus: true, autocomplete: "email",class:'radius2',placeholder: 'Email' %>
+</div>
+</div>
+<div class="form-row justify-content-md-center">
+    <div class="form-group col-md-3">
+         <%= f.password_field :password, autocomplete: "off",class:'radius2',placeholder: 'Password' %>
+    </div>
+    <div class="form-group col-md-3">
+       <%= f.password_field :password_confirmation, autocomplete: "off",class:'radius2',placeholder: 'Password Confirmtion' %>
+    </div>
+</div>
+<div class="form-row justify-content-md-center">
+    <div class="form-group col-md-3">
+      <%= f.text_field :organization_name, autofocus: true, class:'radius2', 
+      placeholder:'Organization Name' %>
+    </div>
+    <div class="form-group col-md-3">
+      <%= f.text_field :organization_adress, autofocus: true, class:'radius2',placeholder: 'Organization Adress' %>
+      </div>
+</div>
+<div class="form-row justify-content-md-center">
+    <div class="form-group col-md-6">
+      <%= f.text_field :organization_adress2, autofocus: true, class:'radiusfull', placeholder:'Organization Adress2' %>
+    </div>
+</div>
+    <div class="form-row justify-content-md-center">
+    <div class="form-group col-md-2">
+      <%= f.text_field :city, autofocus: true, class:'radiusthree',placeholder: 'City' %>
+    </div>
+    <div class="form-group col-md-2">
+      <%= f.text_field :state, autofocus: true, class:'radiusthree',placeholder: 'state' %>
+    </div>
+    <div class="form-group col-md-2">
+      <%= f.text_field :zip, autofocus: true, class:'radiusthree',placeholder: 'zip' %>
+    </div>
+</div>
+<div class="form-row justify-content-md-center">
+    <div class="form-group col-md-6">
+      <%= f.text_field :phone_number, autofocus: true, class:'radiusfull',placeholder: 'Phone Number' %>
+    </div>
+</div>
+    <div class="form-row justify-content-md-center">
+        <div class="form-group col-md-1">
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="donor" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">Donor</label>
+            </div>
+        </div>
+            <div class="form-group col-md-1">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="donor" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">Recipient</label>
+                        </div>
+                    </div>
+            <div class="form-group col-md-4">
+            <input type="submit" class="button2 button4" value="Submit",remote:true>
+            </div>
+            </div>
+  <% end %>

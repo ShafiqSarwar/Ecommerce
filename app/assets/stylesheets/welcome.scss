@@ -1,0 +1,73 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.background
+{
+background-image: url("background.png");
+background-repeat: no-repeat;
+width: 100%;
+padding-top:3%;
+}
+.signup {
+background-color:transparent;
+color: black; 
+border: 2px solid black;
+padding: 12px 110px;
+border-radius: 50px;
+cursor: pointer;
+
+}
+.signup:hover {
+background-color: black;
+color:#dde27b;
+text-decoration:none;
+}
+.signup :active{
+text-decoration: none;
+}
+
+/* For Popup Page */
+.popup{
+
+  width: 730px;
+  height: 221px;
+  background-color:#dde27b; 
+}
+.popup h1{
+    text-align: center;
+
+}
+.popup2{
+
+    width: 730px;
+    height: 221px;
+    background-color:#ffffff;   
+}
+.popup2 p{
+text-align: center;
+color: #8d8d8d;
+margin: 25px;
+
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.button2{
+    background-color: #dde27b;
+    width: 190px;
+    height: 40px; 
+    margin-left: 77px;
+    cursor: pointer;
+    justify-content: center;
+    
+
+}
+.button4{
+    border-radius: 25px;
+}
+
+

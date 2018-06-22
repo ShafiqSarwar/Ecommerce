@@ -1,0 +1,60 @@
+<div class="row text-center">
+      <div class="col-sm-12">
+          <%= image_tag ("loginlogo")%>
+        </div>
+    </div><br>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="row text-center">
+      <div class="form-group col-md-12">
+        <div class="inputwithicon">
+              
+           <%= f.email_field :email, autofocus: true, autocomplete: "email",class:"radius",placeholder: 'Enter Your Email' %><br><br>
+           <%= f.password_field :password, autocomplete: "off",class:'radius',placeholder: 'Password' %>        
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="form-group col-md-10">
+        <div class="inputwithicon">
+          <% if devise_mapping.rememberable? -%>
+           <%= f.check_box :remember_me %>
+              <%= f.label :remember_me %><br>
+               <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="form-group col-sm-4 links">
+         <%= link_to "Forgot your password?", new_password_path(resource_name) %>
+      </div>
+    </div>
+    <div class="row justify-content-sm-center">
+          <div class="form-group col-md-4">
+                <%= f.submit "Log in", class:"signinbtn signinbtn2" %><br><br>
+                <p>Don't have an account?<b><%= link_to "CREATE ONE",new_user_registration_path %></b></p>
+          </div>
+      </div>
+      <div class="row justify-content-sm-center">
+          <div class="form-group col-md-2">
+            <div class="inputwithicon">
+             <!--  <% if resource.has_facebook_linked? %>
+                <%= link_to "Unlink Facebook", authentication_path(resource), method: :delete %>
+                <% else %>
+                <%= link_to "Link Facebook", omniauth_authorize_path(:user, :facebook) %>
+                <% end %>
+              <%= link_to 'Facebook', omniauth_authorize_path(:user, :facebook), class:'facebookbtn signinbtn3' %> -->
+              <a href="#" class="facebookbtn signinbtn3">Facebook</a>
+            </div>
+          </div>
+            <div class="form-group col-md-2">
+              <div class="inputwithicon">
+                  <a href="#" class="googlebtn signinbtn3">Google+</a>
+              </div>
+          </div>
+      </div>
+
+<% end %>
+
+
+
+

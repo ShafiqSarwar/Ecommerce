@@ -1,0 +1,75 @@
+h1 ,p ,a{
+    font-family: 'Montserrat', sans-serif;
+}
+.radius {
+    border-radius: 25px;
+    border: 2px solid gray;
+    padding: 20px; 
+    width: 30%;
+    height: 50px;    
+}
+a:link {
+    color: #8d8d8d;
+    text-decoration: none;
+}
+.links a{
+    color: #8d8d8d;
+    text-decoration: none;
+}
+.links{
+    text-align: center;
+}
+.links a:hover{
+    color:black;
+    text-decoration:none;
+}
+.accountlink a{
+    color: black;
+}
+.signinbtn{
+    background-color: #dde27b;
+    width:100%;
+    height: 50px; 
+    cursor: pointer;
+    font-size: 25px;
+
+}
+.signinbtn2{
+    border-radius: 25px
+}
+.signinbtn3{
+    border-radius: 25px;
+    color:white;
+}
+.facebookbtn{
+    background-color: #3245b8;
+    border: none;
+    padding: 15px 30%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-align: end;
+
+    cursor: pointer;
+}
+
+.googlebtn{
+    background-color: #dc4e41;
+    border: none;
+    padding: 15px 30%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+.search {
+    border-radius: 15px;
+    border: 2px solid gray;
+    padding: 20px; 
+    width: 20%;
+    height: 40px;    
+}
+

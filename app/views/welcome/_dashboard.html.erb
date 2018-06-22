@@ -1,0 +1,20 @@
+<% @listings.each_slice(3) do |listings| %>
+<div class="container ">
+    <div class="row">
+        <% listings.each do |listing| %>
+            <div class="col-sm-4">
+                <div class="card text-center " style="width: 18rem; height: 25rem;">
+                    <%= image_tag listing.cover.url :class=>"card-body" if listing.cover?  %>
+                    <div class="card-body">
+                        <h6 class="card-title"><%= listing.name %></h6>
+                        <p><%= listing.description %><p>
+                     	<%= link_to 'View Details', listing, class:'details' %> 
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    </div>
+    <br>
+</div>
+<% end %>
+<%= will_paginate @listings,  renderer: WillPaginate::ActionView::BootstrapLinkRenderer,list_classes: %w(pagination justify-content-center) %>
