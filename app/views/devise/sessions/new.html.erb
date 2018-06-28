@@ -1,9 +1,10 @@
+<%= devise_error_messages! %>
 <div class="row text-center">
       <div class="col-sm-12">
           <%= image_tag ("loginlogo")%>
         </div>
     </div><br>
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<%= form_for(resource, as: resource_name,validate:true, url: session_path(resource_name)) do |f| %>
     <div class="row text-center">
       <div class="form-group col-md-12">
         <div class="inputwithicon">
@@ -37,12 +38,6 @@
       <div class="row justify-content-sm-center">
           <div class="form-group col-md-2">
             <div class="inputwithicon">
-             <!--  <% if resource.has_facebook_linked? %>
-                <%= link_to "Unlink Facebook", authentication_path(resource), method: :delete %>
-                <% else %>
-                <%= link_to "Link Facebook", omniauth_authorize_path(:user, :facebook) %>
-                <% end %>
-              <%= link_to 'Facebook', omniauth_authorize_path(:user, :facebook), class:'facebookbtn signinbtn3' %> -->
               <a href="#" class="facebookbtn signinbtn3">Facebook</a>
             </div>
           </div>
