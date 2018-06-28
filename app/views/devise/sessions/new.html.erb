@@ -38,6 +38,12 @@
       <div class="row justify-content-sm-center">
           <div class="form-group col-md-2">
             <div class="inputwithicon">
+             <!--  <% if resource.has_facebook_linked? %>
+                <%= link_to "Unlink Facebook", authentication_path(resource), method: :delete %>
+                <% else %>
+                <%= link_to "Link Facebook", omniauth_authorize_path(:user, :facebook) %>
+                <% end %>
+              <%= link_to 'Facebook', omniauth_authorize_path(:user, :facebook), class:'facebookbtn signinbtn3' %> -->
               <a href="#" class="facebookbtn signinbtn3">Facebook</a>
             </div>
           </div>
