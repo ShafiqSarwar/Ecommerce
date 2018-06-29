@@ -64,7 +64,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'sqlite3', '~> 1.3', '>= 1.3.11'
+gem 'sqlite3'
 
 gem 'omniauth', '~> 1.6', '>= 1.6.1'
 
