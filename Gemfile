@@ -39,15 +39,17 @@ gem 'carrierwave', '~> 1.0'
 
 gem 'mini_magick', '~> 4.3'
 
-gem "koala"
+# gem "koala"
 
-gem 'omniauth-facebook'
+# gem 'omniauth-facebook'
 
 gem 'figaro'
 
 gem 'will_paginate'
 
 gem 'kaminari'
+
+
 
 
 gem 'client_side_validations-simple_form'
@@ -62,6 +64,11 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'sqlite3', '~> 1.3', '>= 1.3.11'
+
+gem 'omniauth', '~> 1.6', '>= 1.6.1'
+
+gem 'omniauth-facebook'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -80,10 +87,12 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
+  gem 'listen', '~> 3.0'
 end
 
 group :test do
@@ -92,7 +101,6 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
-  gem 'sqlite3'
 end
 
 
@@ -102,7 +110,7 @@ gem 'pg', '~> 1.0'
 
 gem 'thin', '~> 1.7', '>= 1.7.2'
 
-gem 'rails_12factor', '~> 0.0.3'
+gem 'rails_12factor', group: :production
 
 end
 
