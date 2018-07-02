@@ -1,5 +1,5 @@
 current directory: /Users/apple/ShafiqSarwar/Ruby and Rail/Ecommerce/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.25/ext/ffi_c
-/Users/apple/.rvm/rubies/ruby-2.3.4/bin/ruby -r ./siteconf20180628-14074-ftusa6.rb extconf.rb
+/Users/apple/.rvm/rubies/ruby-2.3.4/bin/ruby -r ./siteconf20180702-10003-8cj34v.rb extconf.rb
 checking for ffi.h... no
 checking for ffi.h in /usr/local/include,/usr/include/ffi... yes
 checking for ffi_call() in -lffi... yes
