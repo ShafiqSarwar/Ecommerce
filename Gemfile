@@ -51,6 +51,8 @@ gem 'kaminari'
 
 gem 'pg', '~> 1.0'
 
+gem "aws-sdk-s3", require: false
+
 
 
 
