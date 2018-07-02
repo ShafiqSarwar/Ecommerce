@@ -49,6 +49,8 @@ gem 'will_paginate'
 
 gem 'kaminari'
 
+gem 'pg', '~> 1.0'
+
 
 
 
@@ -92,7 +94,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
-  gem 'sqlite3', '~> 1.3', '>= 1.3.11'
+  # gem 'sqlite3', '~> 1.3', '>= 1.3.11'
+
 
 end
 
@@ -106,8 +109,6 @@ end
 
 
 group :production do
-
-gem 'pg', '~> 1.0'
 
 gem 'thin', '~> 1.7', '>= 1.7.2'
 
